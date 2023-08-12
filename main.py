@@ -5,10 +5,9 @@ keyboard = Controller()
 import pygetwindow as gw
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-c", "--config", help = "The layout you want to load")
+parser.add_argument("-c", "--config", help = "The layout you want to load", required=True)
 
 args = parser.parse_args()
-
 win = gw.getWindowsWithTitle('Roblox')[0] 
 win.activate()
 time.sleep(1)
